@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   /*  width: 100vw; */
+    height: 100vh;
+   /*  min-height: 100%; */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    margin-top: calc(55px - 15px);
+    width: 35%;
+}
+
+.container,
+.post {
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+    padding-top: 20px;
+    margin-top: 35px;
+
+    width: 60%;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+textarea {
+    width: 80%;
+    height: 40px;
+    max-height: 80px;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    border: none;
+    outline: none;
+    resize: none;
+
+    color: #CA6014;
+    font-weight: 700;
+}
+
+textarea::-webkit-scrollbar {
+    height: none;
+}
+
+textarea::placeholder {
+    color: #CA6014;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+    color: #126261;
+
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+button {
+    background: transparent;
+    border: none;
+}
+
+button i {
+    font-size: 45px;
+    color: #FB7C1D;
+    cursor: pointer;
+}
+
+button i:hover {
+    opacity: .8;
+}
+
+button i:active {
+    opacity: .5;
+}
+
+.hidden {
+    display: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    gap: 10px;
+    background: #126261;
+    color: white;
+}
+
+li p {
+    width: 80%;
+    text-align: justify;
+}
+
+li i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+}
+
+.fa-circle-check:hover {
+    background: #12d400;
+    color: #FFFFFF;
+
+}
+
+.fa-circle-check:active {
+    background: #12d400;
+    color: #FFFFFF;
+}
+
+
+.fa-circle-minus:hover {
+    color: #bf0000;
+}
+
+.fa-circle-minus:active {
+    color: #bf0000;
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        height: 100%;
+        }
+
+        
+    .container, .post {
+    width: 80%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+   
+
+    .container,
+    .post {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .post {
+        height: auto;
+    }
+
+    
+
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li p {
+        width: 100%;
+        }
+
+    .item {
+        display: flex;
+        gap: 25px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    h1 {
+        font-size: 20px;
+    }
+}
